@@ -1,1 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="b">
+<head>
+  <meta charset="UTF-8" />
+  <title>SeqAnalyzer Suite — Plataforma Educacional em Biotecnologia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+  <!-- PÁGINA -->
+  <div class="page">
+    <header>
+	
+      <div class="nav-inner">
+	  
+        <!-- Marca -->
+        <div class="brand">
+          <div class="brand-logo">SEQ</div>
+          <div class="brand-text">
+            <span>SeqAnalyzer Suite</span>
+            <span data-i18n="brandSubtitle">DNA em modo investigação científica</span>
+          </div>
+        </div>
+
+
+
+        <!-- Menu principal -->
+        <nav>
+          <ul>
+            <li>
+                <a href="../portal.html" style="font-weight: 700; color: var(--accent); display: flex; align-items: center; gap: 4px;">
+                    <i class="ph-bold ph-arrow-left" style="font-size: 0.9rem;"></i> Meu Portifólio
+                </a>
+            </li>
+		    <li><a href="#modulos" data-i18n="navModulos">Módulos</a></li>
+            <li><a href="#casos" data-i18n="navCasos">Casos</a></li>
+            <li><a href="#professores" data-i18n="navProfs">Para Professores</a></li>
+          </ul>
+        </nav>
+
+        <!-- Controles (visual + idioma) -->
+        <div class="header-controls">
+		
+          <!-- Visual -->
+          <div class="control-inline">
+            <label for="themeSelect" class="inline-label" data-i18n="labelVisual">Visual</label>
+            <div class="select-shell">
+              <select id="themeSelect">
+                <option value="a" data-i18n="themeA">Azul Científico</option>
+                <option value="c" data-i18n="themeC">Azul Forense</option>
+                <option value="g" data-i18n="themeG">Biohack Neon</option>
+                <option value="h" data-i18n="themeH">Cinza Minimal</option>
+                <option value="e" data-i18n="themeE">Eclipse Azul</option>
+                <option value="f" data-i18n="themeF">Eclipse Laranja</option>
+                <option value="d" data-i18n="themeD">Fogo Molecular</option>
+                <option value="b" data-i18n="themeB">Verde Clínico</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Idioma -->
+          <div class="lang-flags">
+            <img src="https://flagcdn.com/w20/br.png" data-lang="pt" class="flag" alt="Português">
+            <img src="https://flagcdn.com/w20/gb.png" data-lang="en" class="flag" alt="English">
+            <img src="https://flagcdn.com/w20/es.png" data-lang="es" class="flag" alt="Español">
+          </div>
+
+        </div>
+      </div>
+    
+	</header>
+	
+	
+
+    <main id="inicio">
+
+      <!-- SEÇÃO HERO -->
+      <section class="section">
+        <div class="hero">
+		    <!-- BLOCO DA ESQUERDA -->
+		 <div>
+		    <!-- FRASE DE ABERTURA -->
+            <div class="hero-kicker" data-i18n="heroKicker">XXX</div>
+
+            <!-- TÍTULO -->
+            <h1 class="hero-title" data-i18n="heroTitle"> <span class="hero-highlight">XXX</h1>
+
+            <!-- TEXTO DO BLOCO -->
+            <p class="hero-subtitle" data-i18n="heroSubtitle">XXX </p>
+
+            <!-- BOTÕES -->
+            <div class="hero-actions">
+              <button class="btn-primary" data-i18n="btnConhecer">XXX</button>
+              <button class="btn-ghost" data-i18n="btnCasos">XXX</button>
+            </div>
+
+            <!--METADADOS -->
+            <div class="hero-meta">
+              <div class="hero-meta"> <span data-i18n="heroMeta1"><strong>Autor:</strong>xxx</span></div>
+		      <div class="hero-meta"> <span data-i18n="heroMeta2">xxx</span></div>
+            </div>
+			
+          </div>
+		  
+		  
+		  
+		    <!-- BLOCO DA DIREITA -->
+          <div class="hero-visual">
+            <div class="hero-visual-inner">
+			
+			  <!-- TEMA DO BLOCO -->
+              <div class="hero-tagline" data-i18n="heroTagline">xxx</div>
+			  
+			  <!-- TÍTULO -->
+              <div class="hero-panel-title" data-i18n="heroPanelTitle">xxx</div>
+			  
+			  <!-- TEXTO 1 -->
+              <p class="hero-panel-text" data-i18n="heroPanelText"> xxx </p>
+			  
+			  <!-- CHIPS DO BLOCO -->
+              <div class="pill-row">
+                <span class="chip" data-i18n="chipSimuladores">XXX</span>
+                <span class="chip" data-i18n="chipCasosForenses">XXX</span>
+                <span class="chip" data-i18n="chipMetodologias">XXX</span>
+                <span class="chip" data-i18n="chipBNCC">XXX</span>
+              </div>
+			  
+			  
+			  <!-- TEXTOS DE FINALIZAÇÃO -->
+              <div class="mini-metric">
+                <span data-i18n="heroMiniMetric">XXX</span>
+              </div>
+            </div>
+			
+			
+			
+          </div>
+		  
+        </div>
+      </section>
+	  
+	  
+
+      <!-- MÓDULOS -->
+      <section id="modulos" class="section">
+	  
+	  <!-- CABEÇALHO -->
+	    <!-- TEMA -->
+        <div class="section-kicker" data-i18n="modsKicker">Módulos principais</div>
+		
+		 <!-- TÍTULO -->
+        <h2 class="section-title" data-i18n="modsTitle">Uma suíte de ferramentas para investigar DNA</h2>
+		
+		 <!-- TEXTO -->
+        <p class="section-lead" data-i18n="modsLead">
+          Cada módulo pode ser usado isoladamente ou combinado com os demais, permitindo desde a exposição conceitual até
+          projetos completos de investigação científica com DNA, genética e biotecnologia.
+        </p>
+
+
+        <!-- ARTIGOS -->
+        <div class="columns-3">
+		
+		 <!-- ARTIGO 1 -->
+          <article class="card">
+		    <!-- CHIP -->
+            <div class="chip" data-i18n="mod1Chip">Módulo 1 • Simulador de enzimas de restrição</div>
+			
+			<!-- TÍTULO -->
+            <h3 data-i18n="mod1Title">RestrictionLab</h3>
+			
+			<!-- TEXTO -->
+            <p data-i18n="mod1Body">
+              Ferramenta para simular cortes de DNA com enzimas de restrição, visualizar fragmentos gerados e preparar
+              amostras para análise em gel virtual.
+            </p>
+			
+			<!-- DESTAQUES -->
+            <ul class="list-bullets" data-i18n="mod1List">
+              <li>Escolha de enzimas e reconhecimento de sítios alvo.</li>
+              <li>Visualização dos fragmentos resultantes em escala de pares de base.</li>
+              <li>Exportação de dados para o módulo GelAnalyzer.</li>
+            </ul>
+          </article>
+
+          <!-- ARTIGO 2 -->
+          <article class="card">
+		  
+		    <!-- CHIP -->
+            <div class="chip" data-i18n="mod2Chip">Módulo 2 • Eletroforese em gel</div>
+			
+			<!-- TÍTULO -->
+            <h3 data-i18n="mod2Title">GelAnalyzer</h3>
+			
+			<!-- TEXTO -->
+            <p data-i18n="mod2Body">
+              Simulador de corridas de eletroforese, com suporte a diferentes corantes, ladders e amostras importadas do
+              RestrictionLab.
+            </p>
+			
+			<!-- DESTAQUES -->
+            <ul class="list-bullets" data-i18n="mod2List">
+              <li>Física de migração logarítmica e micro-resolução ≤ 30 bp.</li>
+              <li>Corantes configuráveis (GelRed, EtBr, SYBR, GelGreen).</li>
+              <li>Laudos em PDF para uso em atividades e avaliações.</li>
+            </ul>
+          </article>
+		  
+          <!-- ARTIGO 3 -->
+          <article class="card">
+		  
+		    <!-- CHIP -->
+            <div class="chip" data-i18n="mod3Chip">Módulo 3 • Perfis forenses de DNA</div>
+			
+			<!-- TÍTULO -->
+            <h3 data-i18n="mod3Title">Forensic-DNA</h3>
+			
+			<!-- TEXTO -->
+            <p data-i18n="mod3Body">
+              Ambiente para simular perfis genéticos, comparar suspeitos e analisar compatibilidade com amostras de cena de crime.
+            </p>
+			
+			<!-- DESTAQUES -->
+            <ul class="list-bullets" data-i18n="mod3List">
+              <li>Perfis multilocus com diferentes marcadores.</li>
+              <li>Comparação visual e numérica entre amostras.</li>
+              <li>Integração com roteiros narrativos e estudos de caso.</li>
+            </ul>
+          </article>
+
+
+		 <!-- ARTIGO 4 -->
+          <article class="card">
+		  
+		    <!-- CHIP -->
+            <div class="chip" data-i18n="mod4Chip">Módulo 4 • Testes de paternidade</div>
+			
+			<!-- TÍTULO -->
+            <h3 data-i18n="mod4Title">PaternityLab</h3>
+			
+			<!-- TEXTO -->
+            <p data-i18n="mod4Body">
+              Simulador de testes de paternidade com múltiplos supostos pais, permitindo discutir probabilidade, bioética e
+              limites da técnica.
+            </p>
+			
+			<!-- DESTAQUES -->
+            <ul class="list-bullets" data-i18n="mod4List">
+              <li>Comparação de perfis de DNA entre criança, mãe e supostos pais.</li>
+              <li>Visualização de alelos compatíveis e incompatíveis.</li>
+              <li>Integração com discussões éticas e jurídicas.</li>
+            </ul>
+          </article>
+
+
+		 <!-- ARTIGO 5 -->
+          <article class="card">
+		  
+		    <!-- CHIP -->
+            <div class="chip" data-i18n="mod5Chip">Módulo 5 • Mutação e variabilidade</div>
+			
+			<!-- TÍTULO -->
+            <h3 data-i18n="mod5Title">MutAnalyzer</h3>
+			
+			<!-- TEXTO -->
+            <p data-i18n="mod5Body">
+              Módulo focado em mutações, variação genética e impactos em proteínas, permitindo conectar DNA a funções biológicas.
+            </p>
+			
+			<!-- DESTAQUES -->
+            <ul class="list-bullets" data-i18n="mod5List">
+              <li>Simulação de mutações pontuais e seus efeitos.</li>
+              <li>Exploração de consequências na estrutura e função de proteínas.</li>
+              <li>Aproximação com doenças genéticas e medicina personalizada.</li>
+            </ul>
+          </article>
+
+
+		 <!-- ARTIGO 6 -->
+          <article class="card">
+		  
+		    <!-- CHIP -->
+            <div class="chip" data-i18n="mod6Chip">Módulo 6 • Construção de sequências</div>
+			
+			<!-- TÍTULO -->
+            <h3 data-i18n="mod6Title">DNA Builder</h3>
+			
+			<!-- TEXTO -->
+            <p data-i18n="mod6Body">
+              Ferramenta para construção guiada de sequências de DNA, voltada à compreensão de códons, leitura de moldes e
+              síntese de cadeias.
+            </p>
+			
+			<!-- DESTAQUES -->
+            <ul class="list-bullets" data-i18n="mod6List">
+              <li>Montagem de sequências a partir de blocos didáticos.</li>
+              <li>Exploração de códons e código genético.</li>
+              <li>Uso em projetos autorais de estudantes.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+
+
+      <!-- CASOS INVESTIGATIVOS -->
+      <section id="casos" class="section">
+        <div class="section-kicker" data-i18n="casosKicker">Casos investigativos</div>
+        <h2 class="section-title" data-i18n="casosTitle">
+          Narrativas forenses para aprender com propósito
+        </h2>
+        <p class="section-lead" data-i18n="casosLead">
+          Os casos foram escritos para unir investigação, storytelling e análise de DNA, permitindo que o estudante adote
+          o papel de perito, pesquisador ou equipe de laboratório.
+        </p>
+
+        <div class="columns-3">
+          <article class="card case-card">
+            <div>
+              <span class="chip" data-i18n="case1Chip">Caso 1 • Scene-based</span>
+              <h3 data-i18n="case1Title">Paciente Zero</h3>
+              <p data-i18n="case1Body">
+                Um surto misterioso em um bairro da cidade levanta a hipótese de um “paciente zero”. A turma precisa usar
+                DNA, rotas de contágio e reconstrução de cadeia de transmissão para entender o caso.
+              </p>
+            </div>
+            <div class="case-actions">
+              <a href="Caso1.html" class="link-button" data-i18n="caseLink">Ver roteiro do caso</a>
+            </div>
+          </article>
+
+          <article class="card case-card">
+            <div>
+              <span class="chip" data-i18n="case2Chip">Caso 2 • Forense social</span>
+              <h3 data-i18n="case2Title">Sombras do Bairro Novo</h3>
+              <p data-i18n="case2Body">
+                Amostras de DNA são coletadas em uma cena de crime que envolve disputas de território, preconceitos e
+                julgamentos precipitados. O foco é discutir evidências, vieses e justiça.
+              </p>
+            </div>
+            <div class="case-actions">
+              <a href="Caso2.html" class="link-button" data-i18n="caseLink">Ver roteiro do caso</a>
+            </div>
+          </article>
+
+          <article class="card case-card">
+            <div>
+              <span class="chip" data-i18n="case3Chip">Caso 3 • Memória e identidade</span>
+              <h3 data-i18n="case3Title">Ecos de 1999</h3>
+              <p data-i18n="case3Body">
+                Um caso antigo é reaberto após a descoberta de novas amostras de DNA. A narrativa explora tempo, memória,
+                tecnologia e reinterpretação de evidências.
+              </p>
+            </div>
+            <div class="case-actions">
+              <a href="Caso3.html" class="link-button" data-i18n="caseLink">Ver roteiro do caso</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+
+      <!-- PARA PROFESSORES -->
+      <section id="professores" class="section">
+        <div class="section-kicker" data-i18n="profsKicker">Para professores</div>
+        <h2 class="section-title" data-i18n="profsTitle">
+          BNCC, metodologias ativas e ensino por investigação
+        </h2>
+        <p class="section-lead" data-i18n="profsLead">
+          O SeqAnalyzer Suite nasce com foco em sala de aula, projetos integradores e formação docente, alinhado às
+          competências gerais da BNCC e a abordagens contemporâneas de ensino de Ciências.
+        </p>
+
+        <div class="two-cols">
+          <div>
+            <article class="card">
+              <h3 data-i18n="profCardTitle">Como a suíte se conecta à BNCC</h3>
+              <p data-i18n="profCardText">
+                Os módulos e casos investigativos podem ser associados a competências gerais e específicas de Ciências da
+                Natureza, como pensamento científico, argumentação, cultura digital e responsabilidade socioambiental.
+              </p>
+              <ul class="list-bullets" data-i18n="profCardList">
+                <li>Planejamento de sequências investigativas por etapas.</li>
+                <li>Integração com avaliação formativa e produção de relatos.</li>
+                <li>Uso em projetos anuais, feiras de ciências e clubes de estudo.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div>
+            <div class="highlight-box" data-i18n="highlightText">
+              <strong>Intenção pedagógica:</strong> não é apenas um simulador de laboratório,
+              mas uma plataforma para criar experiências de aprendizagem completas — com contexto, problema, investigação,
+              análise de dados e comunicação de resultados.
+            </div>
+          </div>
+        </div>
+      </section>
+   
+   </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+      <div class="footer-inner">
+        <span data-i18n="footerLine1">XXX</span>
+        <span data-i18n="footerLine2">XXX</span>
+      </div>
+    </footer>
+	
+	
+  </div>
+
+<script>
+  (function () {
+    const root = document.documentElement;
+
+    // --- 1. CONTROLE DE TEMA (Dropdown <select>) ---
+    const themeSelect = document.getElementById('themeSelect');
+
+    function applyTheme(theme) {
+      if (!theme) theme = 'b';
+      root.setAttribute('data-theme', theme);
+      localStorage.setItem('seqTheme', theme);
+    }
+
+    const savedTheme = localStorage.getItem('seqTheme') || 'b';
+    
+    // Configura e aplica o tema no carregamento
+    if (themeSelect) {
+      themeSelect.value = savedTheme;
+      themeSelect.addEventListener('change', function () {
+        applyTheme(this.value);
+      });
+    } 
+    applyTheme(savedTheme); // Aplica o tema salvo (ou o padrão 'b')
+
+    // --- 2. CONTROLE DE IDIOMA (Bandeiras/Flags) ---
+    // A função applyLanguage() está em translations.js.
+    const langFlags = document.querySelectorAll('.lang-flags .flag');
+    const savedLang = localStorage.getItem('seqLang') || 'pt';
+
+    function updateFlagVisual(activeLang) {
+      langFlags.forEach(flag => {
+        // Usa a classe 'active' para dar destaque à bandeira selecionada (requer CSS em styles.css)
+        if (flag.getAttribute('data-lang') === activeLang) {
+          flag.classList.add('active'); 
+        } else {
+          flag.classList.remove('active');
+        }
+      });
+    }
+
+    // Aplica o idioma salvo no carregamento e atualiza o visual da bandeira
+    // A função applyLanguage é definida em translations.js, que será carregado logo após.
+    // É uma boa prática verificar se a função existe para evitar erros de referência.
+    if (typeof applyLanguage === 'function') {
+      applyLanguage(savedLang);
+      updateFlagVisual(savedLang);
+    } else {
+        // Se a função de tradução não carregou ainda, aplica apenas o visual.
+        updateFlagVisual(savedLang);
+    }
+
+
+    // Adiciona o listener de click para troca de idioma
+    langFlags.forEach(flag => {
+      flag.addEventListener('click', function() {
+        const newLang = this.getAttribute('data-lang');
+        
+        // Chama a função de tradução
+        if (typeof applyLanguage === 'function') {
+          applyLanguage(newLang);
+        }
+        
+        // Atualiza o estado visual das bandeiras
+        updateFlagVisual(newLang);
+      });
+    });
+
+  })();
+</script>
+
+
+<script src="translations.js"></script>
+
+
+</body>
+</html>
 
