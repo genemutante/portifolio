@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cruzadinha Eletrônica 2025</title>
+  <link rel="stylesheet" href="styles.css?v=neon_v2">
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- HEADER GLOBAL -->
+    <header class="app-header">
+      <h1>Cruzadinha Eletrônica</h1>
+      <p class="app-subtitle">Avaliação formativa</p>
+    </header>
+
+    <main class="app-main">
+
+
+    <!-- ================= TELA LOGIN ================= -->
+    <div id="login-screen" class="login-container active">
+        
+        <div class="login-card">
+            
+            <div class="login-icon" style="width:70px; margin:0 auto 12px auto;">
+                <!-- Ícone SVG da Cruz de Palavras Cruzadas -->
+                <svg viewBox="0 0 100 100" width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+                    
+                    <!-- Fundo: Círculo preto -->
+                    <circle cx="50" cy="50" r="48" fill="black"/>
+                
+                    <!-- Definição do quadrado base para reutilização -->
+                    <defs>
+                        <!-- Largura/Altura 8, Borda (stroke) 0.5 para simular espaçamento/separação -->
+                        <rect id="square" width="8" height="8" fill="white" stroke="black" stroke-width="0.5"/>
+                    </defs>
+                
+                    <!-- Estrutura Principal: A Cruz Centrada -->
+                    <g id="cross" transform="translate(50, 50)">
+                        
+                        <!-- Linha Vertical (7 quadrados) -->
+                        <!-- Posição central vertical (índice 0) -->
+                        <use href="#square" x="-4" y="-4"/>
+                    
+                        <!-- 3 Quadrados Acima do centro -->
+                        <use href="#square" x="-4" y="-13.5"/>
+                        <use href="#square" x="-4" y="-23"/>
+                        <use href="#square" x="-4" y="-32.5"/>
+                    
+                        <!-- 3 Quadrados Abaixo do centro -->
+                        <use href="#square" x="-4" y="5"/>
+                        <use href="#square" x="-4" y="14.5"/>
+                        <use href="#square" x="-4" y="24"/>
+                    
+                        <!-- Linha Horizontal Superior (6 quadrados), cruza no 2º quadrado acima -->
+                        <g transform="translate(0, -23)">
+                            <!-- 3 à esquerda -->
+                            <use href="#square" x="-13.5" y="-4"/>
+                            <use href="#square" x="-23" y="-4"/>
+                            <use href="#square" x="-32.5" y="-4"/>
+                    
+                            <!-- 3 à direita -->
+                            <use href="#square" x="5" y="-4"/>
+                            <use href="#square" x="14.5" y="-4"/>
+                            <use href="#square" x="24" y="-4"/>
+                        </g>
+                    
+                        <!-- Linha Horizontal Inferior (6 quadrados), cruza no 2º quadrado abaixo -->
+                        <g transform="translate(0, 14.5)">
+                            <!-- 3 à esquerda -->
+                            <use href="#square" x="-13.5" y="-4"/>
+                            <use href="#square" x="-23" y="-4"/>
+                            <use href="#square" x="-32.5" y="-4"/>
+                    
+                            <!-- 3 à direita -->
+                            <use href="#square" x="5" y="-4"/>
+                            <use href="#square" x="14.5" y="-4"/>
+                            <use href="#square" x="24" y="-4"/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <h1>Cruzadinha Eletrônica</h1>
+            <p>Digite seu código de acesso.</p>
+            
+            <input 
+                type="text" 
+                id="accessCode" 
+                placeholder="Ex: AR1X92"
+                maxlength="10"
+            >
+            
+            <button onclick="entrarComoAluno()">Entrar</button>
+            
+        </div>
+        
+    </div>
+
+
+      <!-- ================= TELA PROFESSOR ================= -->
+<section id="professor-screen" class="screen">
+  <div class="aluno-layout">
+
+    <aside class="painel">
+      <div class="brand-panel">
+        <div class="brand-top">
+          <div>
+            <h1 class="brand-title">Cruzadinha Eletrônica</h1>
+            <p class="brand-subtitle">Painel do Professor</p>
+          </div>
+          <button id="logout-prof" class="btn btn-logout-dark">Sair</button>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-label">Dados da Atividade</div>
+        
+        <div id="display-theme" class="info-main">Nova Atividade</div>
+        
+        <div class="info-sub">
+           <span id="display-discipline">Disciplina</span> • 
+           <span id="display-professor">Professor</span>
+        </div>
+      </div>
+
+
+
+      <div class="status-card">
+          <span class="status-label">Status da Geração</span>
+          <span id="professor-status" class="status-value">Pronto para gerar</span>
+      </div>
+
+
+      <!-- BOTÕES DO PROFESSOR (ligados ao formulário) -->
+      <div class="painel-actions">
+        <button
+          type="button"
+          id="fill-sample"
+          form="professor-form"
+          class="side-btn neutral"
+        >
+          Preencher exemplo
+        </button>
+
+        <button
+          type="submit"
+          form="professor-form"
+          class="side-btn primary"
+        >
+          Gerar Cruzadinha
+        </button>
+      </div>
+
+
+         <div class="message-card">
+             <div class="message-title">Instruções</div>
+             <div class="message-text">
+                 Preencha os dados e as perguntas abaixo. Depois clique em <strong>“Gerar Cruzadinha”</strong> para salvar a atividade.
+             </div>
+         </div>
+
+	  
+	  
+    </aside>
+
+    <section class="cruzadinha-area">
+      <div class="formulario-professor">
+
+<div class="activity-config-card">
+
+    <h2 class="card-title">Dados da Atividade</h2>
+
+    <div class="group-row">
+        <div class="group-item">
+            <label for="crossword-title">Título da Cruzadinha</label>
+            <input type="text" id="crossword-title" placeholder="Ex: Verbos Irregulares" />
+        </div>
+
+        <div class="group-item">
+            <label for="crossword-discipline">Disciplina</label>
+            <select id="crossword-discipline" onchange="atualizarPainelProfessor()">
+                <option value="">Selecione</option>
+                <option>Português</option>
+                <option>Matemática</option>
+                <option>Ciências</option>
+                <option>História</option>
+                <option>Geografia</option>
+                <option>Inglês</option>
+                <option>Outra</option>
+            </select>
+        </div>
+
+        <div class="group-item">
+            <label for="professor-name">Nome do Professor</label>
+            <input type="text" id="professor-name" placeholder="Ex: Prof. Silva" maxlength="25" />
+        </div>
+    </div>
+
+</div>
+
+
+        <div class="card">
+          <h2 class="section-title-questions">Configuração das Perguntas</h2>
+
+
+          <form id="professor-form">
+            <div class="qa-list">
+              
+              <div class="qa-card">
+                <div class="qa-number">01</div>
+                <div class="qa-content">
+                  <textarea class="qa-pergunta" name="q1" rows="3" placeholder="Digite a pergunta 1..."></textarea>
+                  <input class="qa-resposta" name="a1" type="text" placeholder="Resposta curta" />
+                </div>
+              </div>
+              <div class="qa-card">
+                <div class="qa-number">02</div>
+                <div class="qa-content">
+                  <textarea class="qa-pergunta" name="q2" rows="3" placeholder="Digite a pergunta 2..."></textarea>
+                  <input class="qa-resposta" name="a2" type="text" placeholder="Resposta curta" />
+                </div>
+              </div>
+              <div class="qa-card">
+                <div class="qa-number">03</div>
+                <div class="qa-content">
+                  <textarea class="qa-pergunta" name="q3" rows="3" placeholder="Digite a pergunta 3..."></textarea>
+                  <input class="qa-resposta" name="a3" type="text" placeholder="Resposta curta" />
+                </div>
+              </div>
+              <div class="qa-card">
+                <div class="qa-number">04</div>
+                <div class="qa-content">
+                  <textarea class="qa-pergunta" name="q4" rows="3" placeholder="Digite a pergunta 4..."></textarea>
+                  <input class="qa-resposta" name="a4" type="text" placeholder="Resposta curta" />
+                </div>
+              </div>
+              <div class="qa-card">
+                <div class="qa-number">05</div>
+                <div class="qa-content">
+                  <textarea class="qa-pergunta" name="q5" rows="3" placeholder="Digite a pergunta 5..."></textarea>
+                  <input class="qa-resposta" name="a5" type="text" placeholder="Resposta curta" />
+                </div>
+              </div>
+              <div class="qa-card">
+                <div class="qa-number">06</div>
+                <div class="qa-content">
+                  <textarea class="qa-pergunta" name="q6" rows="3" placeholder="Digite a pergunta 6..."></textarea>
+                  <input class="qa-resposta" name="a6" type="text" placeholder="Resposta curta" />
+                </div>
+              </div>
+              <div class="qa-card">
+                <div class="qa-number">07</div>
+                <div class="qa-content">
+                  <textarea class="qa-pergunta" name="q7" rows="3" placeholder="Digite a pergunta 7..."></textarea>
+                  <input class="qa-resposta" name="a7" type="text" placeholder="Resposta curta" />
+                </div>
+              </div>
+              <div class="qa-card">
+                <div class="qa-number">08</div>
+                <div class="qa-content">
+                  <textarea class="qa-pergunta" name="q8" rows="3" placeholder="Digite a pergunta 8..."></textarea>
+                  <input class="qa-resposta" name="a8" type="text" placeholder="Resposta curta" />
+                </div>
+              </div>
+              <div class="qa-card">
+                <div class="qa-number">09</div>
+                <div class="qa-content">
+                  <textarea class="qa-pergunta" name="q9" rows="3" placeholder="Digite a pergunta 9..."></textarea>
+                  <input class="qa-resposta" name="a9" type="text" placeholder="Resposta curta" />
+                </div>
+              </div>
+              <div class="qa-card">
+                <div class="qa-number">10</div>
+                <div class="qa-content">
+                  <textarea class="qa-pergunta" name="q10" rows="3" placeholder="Digite a pergunta 10..."></textarea>
+                  <input class="qa-resposta" name="a10" type="text" placeholder="Resposta curta" />
+                </div>
+              </div>
+
+            </div>
+
+			
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+
+
+      <!-- ================= TELA ALUNO ================= -->
+      <section id="aluno-screen" class="screen">
+
+        <div class="aluno-layout">
+
+          <!-- ===== PAINEL LATERAL DO ALUNO ===== -->
+<aside class="painel">
+<div class="brand-panel">
+    <div class="brand-top">
+      <div>
+        <h1 class="brand-title" >CRUZADINHA ELETRÔNICA</h1>
+        <p class="brand-subtitle">Avaliação Formativa</p>
+      </div>
+      <button id="logout-aluno" class="btn btn-logout-dark">Sair</button>
+    </div>
+  </div>
+
+<div class="info-block">
+        <div class="info-label">Atividade</div>
+        <div id="aluno-display-theme" class="info-main">Carregando tema...</div>
+        <div class="info-sub">
+            <span id="aluno-display-discipline">Disciplina</span> • 
+            <span id="aluno-display-professor">Prof.</span>
+        </div>
+    </div>
+
+  <div class="info-block">
+    <div class="info-label">Aluno</div>
+    <div id="aluno-nome" class="info-main">Renato Melo</div>
+    <div class="info-sub">
+      <span id="aluno-turma">6º Ano A</span> • Colégio EduCiTec
+    </div>
+  </div>
+
+  <div class="dashboard-header">
+    <h2>Desempenho</h2>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span class="stat-label">Tempo</span>
+      <span class="stat-value" id="timer-display">00:00</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Palavras</span>
+      <span class="stat-value" id="score-words">0 / 0</span>
+    </div>
+
+    <div class="stat-card span-2">
+      <span class="stat-label">Precisão</span>
+      <span class="stat-value" id="score-letters">0%</span>
+    </div>
+
+    <div class="stat-card highlight">
+      <span class="stat-label">Nota</span>
+      <span class="stat-value" id="score-note">0</span>
+    </div>
+    <div class="stat-card highlight">
+      <span class="stat-label">Conceito</span>
+      <span class="stat-value" id="score-concept">–</span>
+    </div>
+  </div>
+
+  <div class="painel-message">
+    <small>DICA DO PROFESSOR</small>
+    <p id="feedback-message">Observe as dicas e inicie.</p>
+  </div>
+
+</aside>
+
+          <!-- ===== AREA DA CRUZADINHA ===== -->
+          <section class="cruzadinha-area">
+            <div id="crossword-grid" class="crossword-grid"></div>
+          </section>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- ========== RODAPÉ CORRETO ========== -->
+    <div class="app-author">Criado por Renato Melo</div>
+
+  </div>
+
+  <script src="script.js" defer></script>
+  
+  
+  
+  
+<div id="loading-overlay" class="loading-overlay">
+      <div class="loading-message">
+        <div class="spinner"></div>
+        <p>Gerando cruzadinha, aguarde...</p>
+      </div>
+    </div>
+
+
+</body>
+</html>
