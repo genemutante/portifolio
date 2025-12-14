@@ -1,0 +1,1102 @@
+    :root {
+      /* valores padrão (Tema A - Científico Moderno) */
+      --bg: #f7f9fc;
+      --bg-alt: #ffffff;
+      --card: #ffffff;
+      --accent: #0ea5e9;
+      --accent-strong: #0284c7;
+      --accent-soft: rgba(14, 165, 233, 0.08);
+      --text: #0f172a;
+      --muted: #4b5563;
+      --border: #dbe0e6;
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.08);
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+      --max-width: 1120px;
+
+    }
+
+    /* Tema A — Científico Moderno (claro) */
+    :root[data-theme="a"] {
+      /* cores base do layout */
+      --bg: #f7f9fc;
+      --bg-alt: #ffffff;
+      --card: #ffffff;
+      --accent: #0ea5e9;
+      --accent-strong: #0284c7;
+      --accent-soft: rgba(14, 165, 233, 0.08);
+      --text: #0f172a;
+      --muted: #4b5563;
+      --border: #dbe0e6;
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.08);
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+      --max-width: 1120px;
+    
+      /* cabeçalho + marca (tema A — científico moderno) */
+      --header-bg: rgba(255, 255, 255, 0.78);
+      --header-text: #0f172a;      /* título "SeqAnalyzer Suite" */
+      --header-text-sub: #0074cc;  /* subtítulo azul combinando com o logo */
+      --header-border: rgba(148, 163, 184, 0.26);
+    
+      --logo-bg: linear-gradient(135deg, #4cc3ff, #009dff);
+      --logo-text: #ffffff;
+      --logo-shadow: 0 4px 16px rgba(0, 140, 255, 0.28);
+    }
+    
+    /* Tema B — Branco Clínico (padrão institucional) */
+    :root[data-theme="b"] {
+      --bg: #ffffff;
+      --bg-alt: #f5f7fa;
+      --card: #ffffff;
+      --accent: #0d9488;
+      --accent-strong: #0f766e;
+      --accent-soft: rgba(13, 148, 136, 0.09);
+      --text: #0f172a;
+      --muted: #4b5563;
+      --border: #e2e8f0;
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.06);
+  /* 👇 NOVO */
+  --header-bg: rgba(255, 255, 255, 0.85);
+  --header-text: #164e63;
+  --header-text-sub: #0f766e;
+  --header-border: rgba(148, 163, 184, 0.22);
+
+  --logo-bg: #0f766e;
+  --logo-text: #ffffff;
+  --logo-shadow: 0 4px 14px rgba(15, 118, 110, 0.25);
+	  
+    }
+
+    /* Tema C — Investigação Forense Azul (claro) */
+    :root[data-theme="c"] {
+      --bg: #f5f7fb;
+      --bg-alt: #e4ecff;
+      --card: #ffffff;
+      --accent: #2563eb;
+      --accent-strong: #1d4ed8;
+      --accent-soft: rgba(37, 99, 235, 0.08);
+      --text: #0f172a;
+      --muted: #4b5563;
+      --border: #d1ddff;
+      --shadow-soft: 0 18px 45px rgba(37, 99, 235, 0.16);
+	  
+  /* 👇 NOVO */
+  --header-bg: rgba(255, 255, 255, 0.9);
+  --header-text: #0f172a;
+  --header-text-sub: #2563eb;   /* azul do logo */
+  --header-border: rgba(148, 163, 184, 0.24);
+
+  --logo-bg: linear-gradient(135deg, #2563eb, #1d4ed8);
+  --logo-text: #ffffff;
+  --logo-shadow: 0 4px 18px rgba(37, 99, 235, 0.30);
+
+    }
+
+    /* Tema D — Destaques Quentes (narrativa intensa) */
+    :root[data-theme="d"] {
+      --bg: #0b1020;
+      --bg-alt: #111827;
+      --card: #020617;
+      --accent: #f97316;
+      --accent-strong: #ea580c;
+      --accent-soft: rgba(249, 115, 22, 0.18);
+      --text: #f9fafb;
+      --muted: #9ca3af;
+      --border: #1f2937;
+      --shadow-soft: 0 20px 50px rgba(0, 0, 0, 0.7);
+	/* 👇 NOVO */  
+  --header-bg: rgba(17, 24, 39, 0.9);
+  --header-text: #f9fafb;
+  --header-text-sub: #fb923c;   /* laranja quente, eco do logo */
+  --header-border: rgba(15, 23, 42, 0.7);
+
+  --logo-bg: linear-gradient(135deg, #f97316, #ea580c);
+  --logo-text: #fff7ed;
+  --logo-shadow: 0 4px 20px rgba(0, 0, 0, 0.65);
+	  
+    }
+
+    /* Tema E — Dark Azul Original (laboratório avançado) */
+    :root[data-theme="e"] {
+      --bg: #020617;
+      --bg-alt: #020617;
+      --card: #020617;
+      --accent: #3b82f6;
+      --accent-strong: #2563eb;
+      --accent-soft: rgba(59, 130, 246, 0.18);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1e293b;
+      --shadow-soft: 0 20px 55px rgba(15, 23, 42, 0.85);
+	/* 👇 NOVO */   
+  --header-bg: rgba(2, 6, 23, 0.8);
+  --header-text: #e2e8f0;
+  --header-text-sub: #a5b4fc;   /* azul-violeta suave, ligado ao logo */
+  --header-border: rgba(148, 163, 184, 0.25);
+
+  --logo-bg: linear-gradient(135deg, #1e3a8a, #4f46e5);
+  --logo-text: #f9fafb;
+  --logo-shadow: 0 4px 22px rgba(15, 23, 42, 0.7);
+	  
+    }
+
+    /* Tema F — Dark Laranja (alerta e contraste) */
+    :root[data-theme="f"] {
+      --bg: #0b0b10;
+      --bg-alt: #111827;
+      --card: #020617;
+      --accent: #fb923c;
+      --accent-strong: #f97316;
+      --accent-soft: rgba(251, 146, 60, 0.18);
+      --text: #f9fafb;
+      --muted: #9ca3af;
+      --border: #1f2937;
+      --shadow-soft: 0 20px 55px rgba(0, 0, 0, 0.85);
+	  
+	/* 👇 NOVO */ 
+  --header-bg: rgba(15, 23, 42, 0.88);
+  --header-text: #f9fafb;
+  --header-text-sub: #fdba74;   /* laranja claro, derivado do logo */
+  --header-border: rgba(15, 23, 42, 0.75);
+
+  --logo-bg: linear-gradient(135deg, #fb923c, #f97316);
+  --logo-text: #fff7ed;
+  --logo-shadow: 0 4px 22px rgba(0, 0, 0, 0.7);
+	  
+    }
+
+    /* Tema G — Biohack (neon verde tech) */
+    :root[data-theme="g"] {
+      --bg: #020617;
+      --bg-alt: #020617;
+      --card: #020617;
+      --accent: #22c55e;
+      --accent-strong: #16a34a;
+      --accent-soft: rgba(34, 197, 94, 0.18);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #064e3b;
+      --shadow-soft: 0 22px 60px rgba(6, 95, 70, 0.8);
+	  
+	/* 👇 NOVO */ 
+  --header-bg: rgba(2, 6, 17, 0.85);
+  --header-text: #e5e7eb;
+  --header-text-sub: #22c55e;   /* verde neon, igual ao logo */
+  --header-border: rgba(34, 197, 94, 0.3);
+
+  --logo-bg: linear-gradient(135deg, #22c55e, #16a34a);
+  --logo-text: #eafff3;
+  --logo-shadow: 0 4px 24px rgba(34, 197, 94, 0.4);
+    }
+
+    /* Tema H — Neutro Minimalista (claro e discreto) */
+    :root[data-theme="h"] {
+      --bg: #f5f5f5;
+      --bg-alt: #ffffff;
+      --card: #ffffff;
+      --accent: #64748b;
+      --accent-strong: #0f172a;
+      --accent-soft: rgba(148, 163, 184, 0.14);
+      --text: #111827;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --shadow-soft: 0 14px 35px rgba(15, 23, 42, 0.06);
+	/* 👇 NOVO */ 
+  --header-bg: rgba(255, 255, 255, 0.9);
+  --header-text: #111827;
+  --header-text-sub: #6b7280;   /* cinza médio, ligado ao logo */
+  --header-border: rgba(0, 0, 0, 0.05);
+
+  --logo-bg: #6b7280;
+  --logo-text: #ffffff;
+  --logo-shadow: 0 4px 16px rgba(107, 114, 128, 0.28);
+	  
+    }
+
+
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* NAVBAR */
+header {
+  background: var(--header-bg);
+  color: var(--header-text);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--header-border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: background .25s ease, color .25s ease, border-color .25s ease;
+}
+
+
+
+.nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.05rem 1.5rem; /* mais respiro, como no teste */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Empurra o menu para a direita, deixando a logo à esquerda */
+nav {
+  margin-left: auto;
+}
+
+
+
+.theme-a {
+  header-bg: rgba(255, 255, 255, 0.75);
+  header-text: #1e293b;
+  header-text-sub: #475569;
+  header-border: rgba(148, 163, 184, 0.28);
+
+  logo-bg: linear-gradient(135deg, #4cc3ff, #009dff);
+  logo-text: #ffffff;
+  logo-shadow: 0 4px 14px rgba(0, 140, 255, 0.25);
+}
+
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+.brand-logo {
+  background: var(--logo-bg);
+  color: var(--logo-text);
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: var(--logo-shadow);
+  transition: background .25s ease, color .25s ease;
+}
+
+.brand-title {
+  color: var(--header-text);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.brand-subtitle {
+  color: var(--header-text-sub);
+  font-size: .78rem;
+  opacity: .85;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.brand-text span:first-child {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--header-text);       /* título segue a cor do header */
+}
+
+.brand-text span:last-child {
+  font-size: 0.75rem;
+  color: var(--header-text-sub);   /* subtítulo usa a cor por tema */
+}
+
+
+
+    nav ul {
+      display: flex;
+      gap: 1.25rem;
+      list-style: none;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    @media (max-width: 880px) {
+      .nav-inner {
+        flex-wrap: wrap;
+      }
+
+      nav ul {
+        display: none;
+      }
+    }
+
+/* header controls (tema + idioma) — versão alinhada ao menu */
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+/* === THEME SELECT (VISUAL) – VERSÃO ENXUTA === */
+/* === CONTROLES DO CABEÇALHO (TEMA + IDIOMA) === */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;          /* espaço entre tema e bandeiras */
+  margin-left: auto;
+}
+
+/* --- Seletor de tema (VISUAL) --- */
+.theme-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--header-text-sub);
+}
+
+.theme-label {
+  margin: 0;
+  line-height: 1;       /* evita “subir” demais */
+  position: relative;
+  top: 1px;             /* micro ajuste vertical */
+}
+
+/* pill do select, alinhado à altura das bandeiras */
+.theme-select-shell {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--card);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* combo enxuto e alinhado */
+.theme-select-shell select#themeSelect {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--header-text);
+  padding: 0 18px 0 0;  /* tira “almofada” extra */
+  cursor: pointer;
+  appearance: none;
+}
+
+/* opcional: deixa o foco mais discreto */
+.theme-select-shell select#themeSelect:focus {
+  outline: none;
+}
+
+
+
+    /* LAYOUT GERAL */
+
+    main {
+      flex: 1;
+    }
+
+    .section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2.7rem 1.5rem;
+    }
+
+    .section-kicker {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-lead {
+      font-size: 0.92rem;
+      color: var(--muted);
+      max-width: 46rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 1.4rem 1.6rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .card .chip {
+      margin-bottom: 0.7rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .list-bullets li::before {
+      content: "•";
+      color: var(--accent);
+      margin-right: 0.35rem;
+    }
+
+    .list-bullets li {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+      padding-left: 0.2rem;
+    }
+
+    .two-cols {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 1.8rem;
+    }
+
+    @media (max-width: 880px) {
+      .two-cols {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .columns-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.1rem;
+    }
+
+    @media (max-width: 1024px) {
+      .columns-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .columns-3 {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .highlight-box {
+      border-radius: var(--radius-lg);
+      border: 1px dashed var(--border);
+      background: var(--card);
+      padding: 1.2rem 1.3rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .highlight-box strong {
+      color: var(--accent);
+    }
+
+    /* HERO */
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+      gap: 2.7rem;
+      align-items: center;
+      padding-top: 3.2rem;
+      padding-bottom: 2.4rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+        padding-top: 2.4rem;
+      }
+    }
+
+    .hero-kicker {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .hero-subtitle {
+      font-size: 0.96rem;
+      color: var(--muted);
+      max-width: 34rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-highlight {
+      color: var(--accent-strong);
+      font-weight: 700;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .btn-primary {
+      border-radius: var(--radius-pill);
+      border: none;
+      background: var(--accent);
+      color: var(--bg-alt);
+      padding: 0.7rem 1.4rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: var(--shadow-soft);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: 0.18s ease-out;
+    }
+
+    .btn-primary:hover {
+      filter: brightness(1.08);
+      transform: translateY(-1px);
+    }
+
+    .btn-ghost {
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      background: transparent;
+      color: var(--text);
+      padding: 0.7rem 1.4rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: 0.18s ease-out;
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    .hero-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-visual {
+      border-radius: var(--radius-lg);
+      background: var(--card);
+      padding: 1.4rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-visual-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-tagline {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-panel-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-panel-text {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1rem;
+    }
+
+    .mini-metric {
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .mini-metric span strong {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--accent);
+    }
+
+    /* CHIP — padrão único para todos os selos/pílulas (igual ao teste) */
+
+    .chip {
+      background: var(--accent-soft);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 0.22rem 0.55rem;
+      font-size: 0.72rem;
+      font-weight: 500;
+      border-radius: 999px;
+      display: inline-block;
+      line-height: 1;
+    }
+
+    /* CARDS DE CASOS */
+
+    .case-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.7rem;
+      min-height: 200px;
+    }
+
+    .case-actions {
+      margin-top: 0.4rem;
+    }
+
+    .link-button {
+      font-size: 0.8rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      padding: 0.4rem 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      cursor: pointer;
+      background: transparent;
+      color: var(--accent);
+      transition: 0.18s ease-out;
+    }
+
+    .link-button:hover {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid rgba(148, 163, 184, 0.2);
+      padding: 1.2rem 1.5rem 2rem;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    footer .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.75rem;
+      align-items: center;
+    }
+	
+/* Correção de contraste nos dropdowns nativos */
+select option {
+  color: #0f172a !important;       /* texto sempre legível */
+  background: #ffffff !important;  /* fundo claro e neutro */
+}
+
+:root[data-theme="d"] select option,
+:root[data-theme="e"] select option,
+:root[data-theme="f"] select option,
+:root[data-theme="g"] select option,
+:root[data-theme="h"] select option {
+  /* temas escuros: fundo escuro, texto claro */
+  color: #e2e8f0 !important;
+  background: #0f172a !important;
+}
+
+/* ================================
+   🔷 Select Shell — Aparência Unificada
+   ================================ */
+.select-shell {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--card);
+  border: 1px solid var(--header-border);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  height: 40px;
+  box-shadow: var(--shadow-soft);
+}
+
+
+/* seta padrão elegante */
+.select-shell::after {
+  content: "▾";
+  position: relative;
+  right: 4px;
+  color: var(--header-text);
+  font-size: 0.75rem;
+  pointer-events: none;
+}
+
+/* Hover */
+.select-shell:hover {
+  border-color: var(--accent);
+}
+
+/* Labels VISUAL / IDIOMA */
+.theme-label,
+.lang-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  color: var(--header-text-sub);
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+/* Agrupamento */
+.theme-wrapper,
+.lang-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* ================================
+   🔷 Drop-down interno
+   ================================ */
+select option {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+:root[data-theme="d"] select option,
+:root[data-theme="e"] select option,
+:root[data-theme="f"] select option,
+:root[data-theme="g"] select option,
+:root[data-theme="h"] select option {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+
+/* ================================
+   🔷 Select Shell — versão compacta
+   ================================ */
+.select-shell {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--card);
+  border: 1px solid var(--header-border);
+  border-radius: 14px;
+  padding: 0.15rem 0.55rem;
+  height: 30px;                /* 👈 Altura compacta */
+  box-shadow: none;            /* 👈 Remove sombra exagerada */
+  min-width: 130px;            /* 👈 Reduz largura */
+}
+
+
+
+/* seta minimalista */
+.select-shell::after {
+  content: "▾";
+  position: relative;
+  right: 2px;
+  color: var(--header-text);
+  font-size: 0.65rem;         /* 👈 menor */
+  pointer-events: none;
+}
+
+/* labels VISUAL / IDIOMA */
+.theme-label,
+.lang-label {
+  font-size: 0.60rem;          /* 👈 reduzido */
+  text-transform: uppercase;
+  letter-spacing: 0.10rem;
+  color: var(--header-text-sub);
+  font-weight: 600;
+  margin-left: 4px;
+  margin-bottom: 2px;          /* 👈 aproxima do seletor */
+}
+
+/* distância entre label e seletor */
+.theme-wrapper,
+.lang-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;                    /* 👈 muito compacto */
+}
+
+
+/* Cabeçalho — tipografia uniforme */
+header, header * {
+  font-family: 'Inter', sans-serif; /* ou a fonte que você já estiver usando */
+}
+
+/* MENU (Home, Módulos, Casos...) */
+header nav ul li a {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--header-text);
+}
+
+/* Labels VISUAL e IDIOMA */
+.inline-label {
+  font-size: 0.70rem;
+  font-weight: 600;
+  letter-spacing: 0.09rem;
+  text-transform: uppercase;
+  color: var(--header-text-sub);
+  margin-right: 6px;
+  display: inline-flex;   /* <- aqui muda de flex para inline-flex */
+  align-items: center;
+  white-space: nowrap;    /* garante que não quebre "Visual" em telas menores */
+}
+
+
+
+/* Shell dos selects */
+.select-shell {
+  display: inline-flex;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--header-border);
+  border-radius: 14px;
+  padding: 0.20rem 0.55rem;
+  height: 32px;
+}
+
+
+/* Seta */
+.select-shell::after {
+  content: "▾";
+  font-size: 0.70rem;
+  color: var(--header-text);
+  position: relative;
+  right: 2px;
+}
+
+
+
+
+/* Aproxima os dois controles entre si */
+.header-controls {
+  gap: 0.75rem;
+}
+
+/* === LANGUAGE FLAGS SWITCH + HEADER CONTROLS – VERSÃO FINAL === */
+
+/* Container dos controles (tema + idioma) */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: auto;
+}
+
+/* Linha com label + select do tema */
+.control-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Label "VISUAL" (fica na mesma linha do select) */
+.inline-label {
+  font-size: 0.70rem;
+  font-weight: 600;
+  letter-spacing: 0.09rem;
+  text-transform: uppercase;
+  color: var(--header-text-sub);
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* “Pílula” do select de tema (Visual) */
+.select-shell {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--card);
+  border: 1px solid var(--header-border);
+  border-radius: 14px;          /* mesmo raio das bandeiras */
+  padding: 4px 10px;
+  height: 32px;                 /* mesma altura das bandeiras */
+  box-shadow: var(--shadow-soft);
+}
+
+
+/* Setinha do select */
+.select-shell::after {
+  content: "▾";
+  font-size: 0.70rem;
+  color: var(--header-text);
+  position: relative;
+  right: 2px;
+  pointer-events: none;
+}
+
+/* Melhora contraste das opções do select */
+select option {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+:root[data-theme="d"] select option,
+:root[data-theme="e"] select option,
+:root[data-theme="f"] select option,
+:root[data-theme="g"] select option,
+:root[data-theme="h"] select option {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+/* === Bandeiras de idioma === */
+
+.lang-flags {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px;
+  height: 32px;                         /* mesma altura do select */
+  background: var(--card);
+  border: 1px solid var(--header-border);
+  border-radius: 14px;                  /* igual ao select */
+  box-shadow: var(--shadow-soft);
+}
+
+/* Tamanho uniforme das bandeiras */
+.lang-flags .flag {
+  width: 22px;                          /* mesmo tamanho para todas */
+  height: 14px;
+  border-radius: 4px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.25s ease;
+}
+
+/* Hover nas bandeiras */
+.lang-flags .flag:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Bandeira ativa (idioma selecionado) */
+.lang-flags .flag.active {
+  opacity: 1;
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  padding: 1px;
+}
+
+
+/* Deixa menu + valores dos selects exatamente iguais */
+header nav ul li a,
+.select-shell select {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+
+
+/* === SELECT UNIFICADO === */
+.select-shell select {
+  width: 100%;              /* <— Área clicável total */
+  display: block;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.90rem;       /* tamanho consistente */
+  font-weight: 500;
+  color: var(--header-text);
+  padding-right: 20px;      /* espaço para a seta */
+  cursor: pointer;
+}
+
+
