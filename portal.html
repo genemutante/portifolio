@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="green">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renato Melo | Portfólio de Professor Autor</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Estilos específicos do portal para centralização e layout */
+    .portal-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+        padding: 2rem;
+        background: var(--bg-main);
+    }
+    .portal-header {
+        margin-bottom: 3rem;
+        max-width: 800px;
+    }
+.portal-header h1 {
+        /* AJUSTE PARA COMPACTAÇÃO */
+        font-size: clamp(1.8rem, 4vw, 2.5rem); 
+        font-weight: 800;
+        line-height: 1.05; /* Mais compacto */
+        color: var(--text-main);
+        margin-bottom: 0.3rem; 
+    }
+    .portal-header p {
+        font-size: 1.15rem;
+        color: var(--text-muted);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .project-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        max-width: 1000px;
+    }
+    .project-card {
+        text-decoration: none;
+        padding: 2.5rem;
+        border-radius: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        border: 2px solid transparent;
+    }
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        border-color: var(--accent);
+    }
+    .project-card h2 {
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+    }
+    .project-card .icon-shell {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        font-size: 2.2rem;
+        color: white;
+    }
+    .project-card .tagline {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        margin-bottom: 1.5rem;
+        min-height: 40px; /* Garante alinhamento visual */
+    }
+    .project-card .cta-link {
+        font-size: 1rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--accent-hover);
+    }
+    
+    /* Estilos específicos para cada projeto */
+    .card-cruzadinha {
+        background: white;
+        color: var(--text-main);
+    }
+    .card-cruzadinha .icon-shell {
+        background: var(--accent);
+    }
+    
+    .card-seqanalyzer {
+        background: var(--bg-dark);
+        color: var(--text-inverse);
+    }
+    .card-seqanalyzer h2, .card-seqanalyzer .tagline {
+        color: white;
+    }
+    .card-seqanalyzer .icon-shell {
+        background: #38bdf8; /* Azul Tech para contraste */
+    }
+    .card-seqanalyzer .cta-link {
+        color: #38bdf8;
+    }
+
+    @media (max-width: 768px) {
+        .project-grid {
+            grid-template-columns: 1fr;
+        }
+        .portal-header {
+            margin-bottom: 2rem;
+        }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="portal-container">
+    
+    <div class="portal-header">
+      <p style="font-size: 1.1rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;">
+          Portfólio de Professor Autor
+      </p>
+      <h1>
+          Tecnologia a serviço da Pedagogia.
+      </h1>
+      <p>
+          Minha experiência na docência me levou a construir minhas próprias soluções. Aqui, apresento a arquitetura pedagógica e as ferramentas digitais que desenvolvi.
+      </p>
+    </div>
+
+    <div class="project-grid">
+
+      <a href="cruzadinha/cruzadinha.html" class="project-card card-cruzadinha">
+        <div class="icon-shell">
+            <i class="ph-fill ph-puzzle-piece"></i>
+        </div>
+        <h2>Cruzadinha Eletrônica 2.0</h2>
+        <div class="tagline">
+            Ferramenta para avaliação formativa invisível e correção zero, transformando o tempo de aula em aprendizado ativo.
+        </div>
+        <div class="cta-link">
+            Analisar Metodologia <i class="ph-bold ph-arrow-right"></i>
+        </div>
+      </a>
+
+      <a href="seqanalizer/index.html" class="project-card card-seqanalyzer">
+        <div class="icon-shell">
+            <i class="ph-fill ph-dna"></i>
+        </div>
+        <h2>SeqAnalyzer Suite</h2>
+        <div class="tagline">
+            Plataforma para ensino de Genética e Biotecnologia por investigação, utilizando análise de DNA e casos narrativos.
+        </div>
+        <div class="cta-link">
+            Ver Ecossistema de Projetos <i class="ph-bold ph-arrow-right"></i>
+        </div>
+      </a>
+
+    </div>
+
+    <footer style="margin-top: 4rem; font-size: 0.8rem; color: var(--text-muted);">
+        Portfólio Autoral © 2025 | Renato Melo
+    </footer>
+    
+  </div>
+</body>
+</html>
